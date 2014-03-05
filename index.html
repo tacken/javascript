@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScriptの練習</title>
+</head>
+<body>
+  <script src="myscript.js"></script>
+  <script>
+    /*
+    コメント
+    コメント
+    コメント
+    */
+    // コメント
+    console.log("hello world!");
+  </script>
+  <script>
+    /*
+        変数：データにつけるラベル
+    */
+    var msg;
+    msg = "hello world";
+    console.log(msg);
+  </script>>
+  <script>
+    var s = "5";
+    var n = 5;
+    var sum = s + n;
+    console.log(sum);
+  </script>
+  <script>
+    /*
+      条件分岐
+    */
+    var score = 80;
+    if (score > 60) {
+      console.log("ok!");
+    } else if (score > 40) {
+      console.log("soso...");
+    } else {
+      console.log("ng!")
+    }
+  </script>
+  <script>
+    if (x) {
+      // 処理
+    }
+
+    if (x !== '') {
+      // 処理
+    }
+    
+    var max, x, y;
+    max = (x > y) ? x : y;
+
+  </script>
+  <script>
+    /*
+      条件分岐
+    */
+    var signal = "red";
+    switch (signal) {
+      case "red":
+        console.log("stop!");
+        break;
+      case "green":
+        console.log("go!");
+        break;
+      case "yellow":
+        console.log("slow down!");
+        break;
+    }
+  </script>
+  <script>
+    /*
+      loop:while
+    */
+    var i = 0;
+    while (i < 10) {
+      console.log(i);
+      i++;
+    } while (i < 10);
+
+  </script>
+  <script>
+    /*
+      loop:for
+    */
+    for (var i = 0; i < 10; i++) {
+      if (i === 5) {
+        // break;
+        continue;
+      }
+      console.log(i);
+    }
+  </script>
+<!--  <script>
+    alert("hello");
+    var answer = confirm("are you sure?");
+    console.log("answer");
+    var name = prompt("お名前は？");
+    console.log(name);
+  </script>
+-->      
+<!--  <script>
+    function hello(name) {
+    //  console.log("hello "+ name);
+      return "hello" + name;
+    }
+    // hello("Tom");
+    // hello("Bob");
+    var greet = hello("Tom");
+    console.log(greet);
+  </script>
+-->
+  <script>
+    /*
+    function hello(name) {
+      var msg = "hello" + name; // ローカル変数
+      return msg;
+    }
+    
+    var hello = function(name) { // 無名関数、匿名関数
+      var msg = "hello " + name; // ローカル変数
+      return msg;
+    };
+    var greet = hello("Tom");
+    console.log(greet);
+    */
+  </script>
+  <script>
+    /*
+      即時関数
+
+    (function(name) {
+      console.log("hello " + name);
+    })("Tom");
+    */
+    (function() {
+      var x = 10,
+          y = 20;
+      console.log(x + y);
+    })();
+  </script>
+</body>
+</html>
